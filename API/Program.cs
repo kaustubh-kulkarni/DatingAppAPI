@@ -11,6 +11,7 @@ namespace API
 {
     public class Program
     {
+        // Bootstrapper method
         public static void Main(string[] args)
         {
             CreateHostBuilder(args).Build().Run();
