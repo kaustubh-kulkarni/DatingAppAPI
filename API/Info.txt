@@ -1,1 +1,4 @@
 Entities folder is nothing but creating our models like users, guests etc and include their properties for better organisation
+
+
+Data related classes will go into Data folder
