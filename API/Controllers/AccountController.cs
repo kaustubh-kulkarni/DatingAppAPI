@@ -21,9 +21,10 @@ namespace API.Controllers
             // Hashing algo for creating password hash
             // by using we mean to dispose the class after its use
             using var hmac = new HMACSHA512(); 
-
+            // Object creation
             var user = new AppUser
             {
+                // Setting up the params
                 UserName = username,
                 PasswordHash = hmac.ComputeHash(Encoding.UTF8.GetBytes(password)),
                 PasswordSalt = hmac.Key
