@@ -44,6 +44,25 @@ namespace API.Controllers
 
             return user;
         }
+        // Method for login
+        [HttpPost("login")]
+        public async Task<ActionResult<AppUser>> Login(LoginDto loginDto)
+        {
+            var user = await _context.Users.SingleOrDefaultAsync(x => x.UserName == loginDto.Username);
+            // Check if the user is empty or not
+            if(user == null) return Unauthorized("Invalid Username");
+            // reverse the computed hash
+            using var hmac = new HMACSHA512(user.PasswordSalt);
+            // password that is in loginDto
+            var computedHash = hmac.ComputeHash(Encoding.UTF8.GetBytes(loginDto.Password));
+            for(int i = 0; i< computedHash.Length; i++)
+            {
+                if(computedHash[i] != user.PasswordHash[i]) return Unauthorized("Invalid Password");
+            }
+            return user;
+
+
+        }
 
         // Function to check if username already exists or not
         private async Task<bool> UserExists(string username)
