@@ -19,7 +19,7 @@ namespace API.Controllers
         // always make DB call async to process data requests
         [HttpGet]
         public async Task<ActionResult<IEnumerable<AppUser>>> GetUsers(){
-            // It goest to datacontext class, access the user table and then access the data inside
+            // It goes to datacontext class, access the user table and then access the data inside
             // ToListAsync is async method comes from EF Core
             return await _context.Users.ToListAsync();
             
