@@ -7,8 +7,10 @@ using Microsoft.Extensions.Logging;
 
 namespace API.Controllers
 {
+    // Signifies this class is of type APIController
     [ApiController]
     [Route("[controller]")]
+    // ControllerBase is something from whcih controller should be derived from
     public class WeatherForecastController : ControllerBase
     {
         private static readonly string[] Summaries = new[]
