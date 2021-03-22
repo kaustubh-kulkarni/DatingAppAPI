@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "d:\\angular_projects\\DatingApp\\API\\API.csproj": {}
+    "D:\\angular_projects\\DatingApp\\API\\API.csproj": {}
   },
   "projects": {
-    "d:\\angular_projects\\DatingApp\\API\\API.csproj": {
+    "D:\\angular_projects\\DatingApp\\API\\API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "d:\\angular_projects\\DatingApp\\API\\API.csproj",
+        "projectUniqueName": "D:\\angular_projects\\DatingApp\\API\\API.csproj",
         "projectName": "API",
-        "projectPath": "d:\\angular_projects\\DatingApp\\API\\API.csproj",
+        "projectPath": "D:\\angular_projects\\DatingApp\\API\\API.csproj",
         "packagesPath": "C:\\Users\\kulka\\.nuget\\packages\\",
-        "outputPath": "d:\\angular_projects\\DatingApp\\API\\obj\\",
+        "outputPath": "D:\\angular_projects\\DatingApp\\API\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"

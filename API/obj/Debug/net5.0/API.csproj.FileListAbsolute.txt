@@ -55,3 +55,7 @@ D:\angular_projects\DatingApp\API\bin\Debug\net5.0\runtimes\win-x64\native\e_sql
 D:\angular_projects\DatingApp\API\bin\Debug\net5.0\runtimes\win-x86\native\e_sqlite3.dll
 D:\angular_projects\DatingApp\API\bin\Debug\net5.0\Humanizer.dll
 D:\angular_projects\DatingApp\API\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Design.dll
+D:\angular_projects\DatingApp\API\bin\Debug\net5.0\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\angular_projects\DatingApp\API\bin\Debug\net5.0\Microsoft.IdentityModel.Logging.dll
+D:\angular_projects\DatingApp\API\bin\Debug\net5.0\Microsoft.IdentityModel.Tokens.dll
+D:\angular_projects\DatingApp\API\bin\Debug\net5.0\System.IdentityModel.Tokens.Jwt.dll
