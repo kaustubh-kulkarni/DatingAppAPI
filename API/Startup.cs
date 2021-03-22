@@ -35,6 +35,8 @@ namespace API
                 options.UseSqlite(_config.GetConnectionString("DefaultConnection"));
             });
             services.AddControllers();
+            // CORS service for cross origin sharing
+            services.AddCors();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -48,6 +50,9 @@ namespace API
             app.UseHttpsRedirection();
 
             app.UseRouting();
+            // UseCors should be at this position only
+            // parameter name could be anything here we are using x
+            app.UseCors(x => x.AllowAnyHeader().AllowAnyMethod().WithOrigins("http://localhost:4200"));
 
             app.UseAuthorization();
 
