@@ -59,3 +59,6 @@ D:\angular_projects\DatingApp\API\bin\Debug\net5.0\Microsoft.IdentityModel.JsonW
 D:\angular_projects\DatingApp\API\bin\Debug\net5.0\Microsoft.IdentityModel.Logging.dll
 D:\angular_projects\DatingApp\API\bin\Debug\net5.0\Microsoft.IdentityModel.Tokens.dll
 D:\angular_projects\DatingApp\API\bin\Debug\net5.0\System.IdentityModel.Tokens.Jwt.dll
+D:\angular_projects\DatingApp\API\bin\Debug\net5.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+D:\angular_projects\DatingApp\API\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.dll
+D:\angular_projects\DatingApp\API\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
