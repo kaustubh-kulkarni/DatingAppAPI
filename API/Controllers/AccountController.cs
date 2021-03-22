@@ -2,8 +2,10 @@ using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 using API.Data;
+using API.DTOs;
 using API.Entities;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 
 namespace API.Controllers
 {
@@ -16,17 +18,21 @@ namespace API.Controllers
         }
         // Post request for registration
         [HttpPost("register")]
-        public async Task<ActionResult<AppUser>> Register(string username, string password)
+        // Function to register the user
+        // Typical implementation is datatype_async_Task<ActionResult<Database entity>>_functionname(params)
+        public async Task<ActionResult<AppUser>> Register(RegisterDto registerDto)
         {
+            // Check if the user already exists
+            if (await UserExists(registerDto.Username)) return BadRequest("Username already exist");
             // Hashing algo for creating password hash
             // by using we mean to dispose the class after its use
             using var hmac = new HMACSHA512(); 
             // Object creation
             var user = new AppUser
             {
-                // Setting up the params
-                UserName = username,
-                PasswordHash = hmac.ComputeHash(Encoding.UTF8.GetBytes(password)),
+                // Setting up the params using DTO
+                UserName = registerDto.Username.ToLower(),
+                PasswordHash = hmac.ComputeHash(Encoding.UTF8.GetBytes(registerDto.Password)),
                 PasswordSalt = hmac.Key
             };
             // Add the user
@@ -37,6 +43,12 @@ namespace API.Controllers
             await _context.SaveChangesAsync(); 
 
             return user;
+        }
+
+        // Function to check if username already exists or not
+        private async Task<bool> UserExists(string username)
+        {
+            return await _context.Users.AnyAsync(x => x.UserName == username.ToLower());
         }
     }
 }
