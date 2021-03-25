@@ -13,11 +13,10 @@ export class AppComponent implements OnInit {
   // Users are type of any i.e we are turning of type safety
   users: any;
   // Dependency injection
-  constructor(private http: HttpClient, private accountService: AccountService) {}
+  constructor(private accountService: AccountService) {}
 
   // Lifecycle events after constructor are called initializers
   ngOnInit(){
-    this.getUsers();
     this.setCurrentUser();
   }
 
@@ -26,14 +25,5 @@ export class AppComponent implements OnInit {
     this.accountService.setCurrentUser(user); 
   }
 
-  getUsers(){
-    // http get request should consist of url and will get response in observables
-    // we need to subscribe to observables to get the data
-    this.http.get('https://localhost:5001/api/users').subscribe(response => {
-      this.users = response;
-    }, error => {
-      console.log(error);
-    })
-  }
 
 }
