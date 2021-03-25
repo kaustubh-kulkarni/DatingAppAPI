@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 
 @Component({
   selector: 'app-register',
@@ -6,7 +6,10 @@ import { Component, Input, OnInit } from '@angular/core';
   styleUrls: ['./register.component.css']
 })
 export class RegisterComponent implements OnInit {
+  // Input when getting props from parent to child
   @Input() usersFromHomeComponent: any;
+  // Output when sending prop to parent from child
+  @Output() cancelRegister = new EventEmitter();
   model: any = {}
 
   constructor() { }
@@ -19,7 +22,8 @@ export class RegisterComponent implements OnInit {
   }
 
   cancel(){
-    console.log('Cancelled');
+    // What we want to emit when button is clicked
+    this.cancelRegister.emit(false);
   }
 
 }
