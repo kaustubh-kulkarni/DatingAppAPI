@@ -1,5 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
+import { User } from './_models/user';
+import { AccountService } from './_services/account.service';
 // decorator
 @Component({
   selector: 'app-root',
@@ -11,11 +13,17 @@ export class AppComponent implements OnInit {
   // Users are type of any i.e we are turning of type safety
   users: any;
   // Dependency injection
-  constructor(private http: HttpClient) {}
+  constructor(private http: HttpClient, private accountService: AccountService) {}
 
   // Lifecycle events after constructor are called initializers
   ngOnInit(){
     this.getUsers();
+    this.setCurrentUser();
+  }
+
+  setCurrentUser(){
+    const user: User = JSON.parse(localStorage.getItem('user'));
+    this.accountService.setCurrentUser(user); 
   }
 
   getUsers(){
