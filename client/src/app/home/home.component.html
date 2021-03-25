@@ -13,7 +13,7 @@
             <div class="col-4">
                 <!-- Here usersFromHomeComponent is prop of register component and users is prop of home component -->
                 <!-- When receiving data from parent it is in [] when emitting from child it is () -->
-                <app-register [usersFromHomeComponent]="users" (cancelRegister)="cancelRegisterMode($event)"></app-register>
+                <app-register (cancelRegister)="cancelRegisterMode($event)"></app-register>
             </div>
         </div>
     </div>
