@@ -30,9 +30,8 @@ namespace API.Controllers
         {
             // It goes to datacontext class, access the user table and then access the data inside
             // ToListAsync is async method comes from EF Core
-            var users = await _userRepository.GetUsersAsync();
-            var usersToReturn = _mapper.Map<IEnumerable<MemberDto>>(users);
-            return Ok(usersToReturn);
+            var users = await _userRepository.GetMembersAsync();
+            return Ok(users);
 
         }
         //  Get users with id's with api/users/id
@@ -40,8 +39,7 @@ namespace API.Controllers
         public async Task<ActionResult<MemberDto>> GetUser(string username)
         {
             // It goest to datacontext class, access the user table and then access the data inside
-            var user = await _userRepository.GetUserByUsernameAsync(username);
-            return _mapper.Map<MemberDto>(user);
+            return await _userRepository.GetMemberAsync(username); 
         }
     }
 }
