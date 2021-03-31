@@ -1,3 +1,4 @@
+using System.Linq;
 using API.DTOs;
 using API.Entities;
 using AutoMapper;
@@ -9,7 +10,8 @@ namespace API.Helpers
         public AutoMapperProfiles()
         {
             // Where we want to map from and where to
-            CreateMap<AppUser, MemberDto>();
+            CreateMap<AppUser, MemberDto>()
+                .ForMember(dest => dest.PhotoUrl, opt => opt.MapFrom(src => src.Photos.FirstOrDefault(x => x.IsMain).Url));
             CreateMap<Photo, PhotoDto>();
         }
     }
