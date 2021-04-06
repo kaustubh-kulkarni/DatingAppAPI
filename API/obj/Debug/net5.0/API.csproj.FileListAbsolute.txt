@@ -65,3 +65,6 @@ D:\angular_projects\DatingApp\API\bin\Debug\net5.0\Microsoft.IdentityModel.Proto
 D:\angular_projects\DatingApp\API\bin\Debug\net5.0\Data\UserSeedData.json
 D:\angular_projects\DatingApp\API\bin\Debug\net5.0\AutoMapper.dll
 D:\angular_projects\DatingApp\API\bin\Debug\net5.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+D:\angular_projects\DatingApp\API\bin\Debug\net5.0\CloudinaryDotNet.dll
+D:\angular_projects\DatingApp\API\bin\Debug\net5.0\Microsoft.Extensions.WebEncoders.dll
+D:\angular_projects\DatingApp\API\bin\Debug\net5.0\Newtonsoft.Json.dll

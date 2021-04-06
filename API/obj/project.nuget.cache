@@ -1,13 +1,17 @@
 {
   "version": 2,
-  "dgSpecHash": "LRPe1mWW91VtMhHeEB8riYiu3l1yA0f71Sj+aMO2Vbq/63BqFMvSDwghf6FI0bmzbJwJs1rhB6jzniLfUdSPog==",
+  "dgSpecHash": "ea8qp/rkFuBDXGZI4NzTWxke8EbUwKHmZkpCD0t2TMX8JvgjnkawPZFx/RPeUzN7J9mP2s4Q7vYXoWIRJAIKVA==",
   "success": true,
   "projectFilePath": "D:\\angular_projects\\DatingApp\\API\\API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\kulka\\.nuget\\packages\\automapper\\10.1.1\\automapper.10.1.1.nupkg.sha512",
     "C:\\Users\\kulka\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\8.1.1\\automapper.extensions.microsoft.dependencyinjection.8.1.1.nupkg.sha512",
+    "C:\\Users\\kulka\\.nuget\\packages\\cloudinarydotnet\\1.15.1\\cloudinarydotnet.1.15.1.nupkg.sha512",
     "C:\\Users\\kulka\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\kulka\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\5.0.4\\microsoft.aspnetcore.authentication.jwtbearer.5.0.4.nupkg.sha512",
+    "C:\\Users\\kulka\\.nuget\\packages\\microsoft.aspnetcore.html.abstractions\\2.2.0\\microsoft.aspnetcore.html.abstractions.2.2.0.nupkg.sha512",
+    "C:\\Users\\kulka\\.nuget\\packages\\microsoft.aspnetcore.http.abstractions\\2.2.0\\microsoft.aspnetcore.http.abstractions.2.2.0.nupkg.sha512",
+    "C:\\Users\\kulka\\.nuget\\packages\\microsoft.aspnetcore.http.features\\2.2.0\\microsoft.aspnetcore.http.features.2.2.0.nupkg.sha512",
     "C:\\Users\\kulka\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\kulka\\.nuget\\packages\\microsoft.data.sqlite.core\\5.0.4\\microsoft.data.sqlite.core.5.0.4.nupkg.sha512",
     "C:\\Users\\kulka\\.nuget\\packages\\microsoft.dotnet.platformabstractions\\3.1.6\\microsoft.dotnet.platformabstractions.3.1.6.nupkg.sha512",
@@ -29,12 +33,14 @@
     "C:\\Users\\kulka\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\5.0.0\\microsoft.extensions.logging.abstractions.5.0.0.nupkg.sha512",
     "C:\\Users\\kulka\\.nuget\\packages\\microsoft.extensions.options\\5.0.0\\microsoft.extensions.options.5.0.0.nupkg.sha512",
     "C:\\Users\\kulka\\.nuget\\packages\\microsoft.extensions.primitives\\5.0.0\\microsoft.extensions.primitives.5.0.0.nupkg.sha512",
+    "C:\\Users\\kulka\\.nuget\\packages\\microsoft.extensions.webencoders\\5.0.3\\microsoft.extensions.webencoders.5.0.3.nupkg.sha512",
     "C:\\Users\\kulka\\.nuget\\packages\\microsoft.identitymodel.jsonwebtokens\\6.9.0\\microsoft.identitymodel.jsonwebtokens.6.9.0.nupkg.sha512",
     "C:\\Users\\kulka\\.nuget\\packages\\microsoft.identitymodel.logging\\6.9.0\\microsoft.identitymodel.logging.6.9.0.nupkg.sha512",
     "C:\\Users\\kulka\\.nuget\\packages\\microsoft.identitymodel.protocols\\6.7.1\\microsoft.identitymodel.protocols.6.7.1.nupkg.sha512",
     "C:\\Users\\kulka\\.nuget\\packages\\microsoft.identitymodel.protocols.openidconnect\\6.7.1\\microsoft.identitymodel.protocols.openidconnect.6.7.1.nupkg.sha512",
     "C:\\Users\\kulka\\.nuget\\packages\\microsoft.identitymodel.tokens\\6.9.0\\microsoft.identitymodel.tokens.6.9.0.nupkg.sha512",
     "C:\\Users\\kulka\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\kulka\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
     "C:\\Users\\kulka\\.nuget\\packages\\sqlitepclraw.bundle_e_sqlite3\\2.0.4\\sqlitepclraw.bundle_e_sqlite3.2.0.4.nupkg.sha512",
     "C:\\Users\\kulka\\.nuget\\packages\\sqlitepclraw.core\\2.0.4\\sqlitepclraw.core.2.0.4.nupkg.sha512",
     "C:\\Users\\kulka\\.nuget\\packages\\sqlitepclraw.lib.e_sqlite3\\2.0.4\\sqlitepclraw.lib.e_sqlite3.2.0.4.nupkg.sha512",
@@ -49,7 +55,8 @@
     "C:\\Users\\kulka\\.nuget\\packages\\system.identitymodel.tokens.jwt\\6.9.0\\system.identitymodel.tokens.jwt.6.9.0.nupkg.sha512",
     "C:\\Users\\kulka\\.nuget\\packages\\system.memory\\4.5.3\\system.memory.4.5.3.nupkg.sha512",
     "C:\\Users\\kulka\\.nuget\\packages\\system.reflection.emit\\4.7.0\\system.reflection.emit.4.7.0.nupkg.sha512",
-    "C:\\Users\\kulka\\.nuget\\packages\\system.security.cryptography.cng\\4.5.0\\system.security.cryptography.cng.4.5.0.nupkg.sha512"
+    "C:\\Users\\kulka\\.nuget\\packages\\system.security.cryptography.cng\\4.5.0\\system.security.cryptography.cng.4.5.0.nupkg.sha512",
+    "C:\\Users\\kulka\\.nuget\\packages\\system.text.encodings.web\\4.5.0\\system.text.encodings.web.4.5.0.nupkg.sha512"
   ],
   "logs": []
 }
