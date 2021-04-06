@@ -40,7 +40,7 @@ namespace API.Controllers
 
         }
         //  Get users with id's with api/users/id
-        [HttpGet("{username}")]
+        [HttpGet("{username}", Name = "GetUser")]
         public async Task<ActionResult<MemberDto>> GetUser(string username)
         {
             // It goest to datacontext class, access the user table and then access the data inside
@@ -84,7 +84,10 @@ namespace API.Controllers
             username.Photos.Add(photo);
 
             if(await _userRepository.SaveAllAsync())
-                return _mapper.Map<PhotoDto>(photo);
+            {
+                return CreatedAtRoute("GetUser", new {username = username.UserName} , _mapper.Map<PhotoDto>(photo));
+            }
+                
 
             return BadRequest("Problem adding photo");
         }
