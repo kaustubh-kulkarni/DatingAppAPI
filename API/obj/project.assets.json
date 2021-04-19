@@ -1881,24 +1881,24 @@
   },
   "packageFolders": {
     "C:\\Users\\kulka\\.nuget\\packages\\": {},
-    "C:\\Microsoft\\Xamarin\\NuGet\\": {}
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "d:\\angular_projects\\DatingApp\\API\\API.csproj",
+      "projectUniqueName": "D:\\angular_projects\\DatingApp\\API\\API.csproj",
       "projectName": "API",
-      "projectPath": "d:\\angular_projects\\DatingApp\\API\\API.csproj",
+      "projectPath": "D:\\angular_projects\\DatingApp\\API\\API.csproj",
       "packagesPath": "C:\\Users\\kulka\\.nuget\\packages\\",
-      "outputPath": "d:\\angular_projects\\DatingApp\\API\\obj\\",
+      "outputPath": "D:\\angular_projects\\DatingApp\\API\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Microsoft\\Xamarin\\NuGet\\"
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
         "C:\\Users\\kulka\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net5.0"
@@ -1972,7 +1972,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
       }
     }
   }
