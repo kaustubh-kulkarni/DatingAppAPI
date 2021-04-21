@@ -26,10 +26,10 @@ namespace API.Entities
         public string City { get; set; }
         public string Country { get; set; }
         public ICollection<Photo> Photos { get; set; }
-        // public int GetAge()
-        // {
-        //     return DateOfBirth.CalculateAge();
-        // }
+        // These are the users that like the currently logged in user
+        public ICollection<UserLike> LikedByUsers { get; set; }
+        // These are the users that currently logged in user liked
+        public ICollection<UserLike> LikedUsers { get; set; }
         
     }
 }
